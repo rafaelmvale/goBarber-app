@@ -138,8 +138,8 @@ const SignUp: React.FC = () => {
           uri: response.uri,
         });
 
-        api.patch('users/avatar', data).then((response) => {
-          updateUser(response.data);
+        api.patch('users/avatar', data).then((apiResponse) => {
+          updateUser(apiResponse.data);
         });
       },
     );
